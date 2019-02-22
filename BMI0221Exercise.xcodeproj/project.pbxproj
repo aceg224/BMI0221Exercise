@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1802774C221E924200886E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802774B221E924200886E67 /* AppDelegate.swift */; };
-		1802774E221E924200886E67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802774D221E924200886E67 /* ViewController.swift */; };
 		18027751221E924200886E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1802774F221E924200886E67 /* Main.storyboard */; };
 		18027753221E924400886E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18027752221E924400886E67 /* Assets.xcassets */; };
 		18027756221E924400886E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18027754221E924400886E67 /* LaunchScreen.storyboard */; };
 		18027761221E924400886E67 /* BMI0221ExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18027760221E924400886E67 /* BMI0221ExerciseTests.swift */; };
 		1802776C221E924400886E67 /* BMI0221ExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802776B221E924400886E67 /* BMI0221ExerciseUITests.swift */; };
+		1802777A221E973D00886E67 /* BMIMainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18027779221E973D00886E67 /* BMIMainTVC.swift */; };
+		1802777C221E977400886E67 /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802777B221E977400886E67 /* BMIResultViewController.swift */; };
+		1802777E221E978500886E67 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802777D221E978500886E67 /* BMI.swift */; };
+		18027780221EA63D00886E67 /* MyFileFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1802777F221EA63D00886E67 /* MyFileFunc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		18027748221E924200886E67 /* BMI0221Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI0221Exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1802774B221E924200886E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1802774D221E924200886E67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18027750221E924200886E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18027752221E924400886E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18027755221E924400886E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		18027767221E924400886E67 /* BMI0221ExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMI0221ExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1802776B221E924400886E67 /* BMI0221ExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI0221ExerciseUITests.swift; sourceTree = "<group>"; };
 		1802776D221E924400886E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18027779221E973D00886E67 /* BMIMainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIMainTVC.swift; sourceTree = "<group>"; };
+		1802777B221E977400886E67 /* BMIResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
+		1802777D221E978500886E67 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		1802777F221EA63D00886E67 /* MyFileFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFileFunc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				1802774B221E924200886E67 /* AppDelegate.swift */,
-				1802774D221E924200886E67 /* ViewController.swift */,
 				1802774F221E924200886E67 /* Main.storyboard */,
 				18027752221E924400886E67 /* Assets.xcassets */,
 				18027754221E924400886E67 /* LaunchScreen.storyboard */,
 				18027757221E924400886E67 /* Info.plist */,
+				18027779221E973D00886E67 /* BMIMainTVC.swift */,
+				1802777B221E977400886E67 /* BMIResultViewController.swift */,
+				1802777D221E978500886E67 /* BMI.swift */,
+				1802777F221EA63D00886E67 /* MyFileFunc.swift */,
 			);
 			path = BMI0221Exercise;
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1802774E221E924200886E67 /* ViewController.swift in Sources */,
+				18027780221EA63D00886E67 /* MyFileFunc.swift in Sources */,
+				1802777E221E978500886E67 /* BMI.swift in Sources */,
 				1802774C221E924200886E67 /* AppDelegate.swift in Sources */,
+				1802777C221E977400886E67 /* BMIResultViewController.swift in Sources */,
+				1802777A221E973D00886E67 /* BMIMainTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X725M6FRD5;
 				INFOPLIST_FILE = BMI0221Exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X725M6FRD5;
 				INFOPLIST_FILE = BMI0221Exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
